@@ -1,5 +1,5 @@
-# osgi-springboot
-1. Description
+## osgi-springboot
+# Description
 
 osgi-* is java project
 osgi.* is plugin project
@@ -16,10 +16,14 @@ osgi.spellcheck.bridge.wrapper is a plugin project and wrapps the SpellcheckBrid
 
 osgi.spellcheck.spellchecker is a plugin project and wrapps the ISpellcheck and SpellCheckResult into bundle so that the other bundles can call it in their own context. It depends on osgi-spellchck-interface jar during building process. In runtime it will use the SpellcheckBridge loaded by Spring framework class loader. osgi.spellcheck.api.wrapper depends on this plugin project
 
-2. Build
+# Build
 
-2.1 build eclipse plugins with gradle
-2.2 add eclipse folde to docker image
-2.3 after jar file is out, put pluign jar file to eclipse folder in docker image and set the SPELLCHECK_OSGI variable which will be used by spring boot application to load equinox
+* build eclipse plugins with gradle
+* add eclipse folde to docker image
+* after jar file is out, put pluign jar file to eclipse folder in docker image and set the SPELLCHECK_OSGI variable which will be used by spring boot application to load equinox
 
-3. Detail interaction please refer to the source code in zip file and BridgeServlet.java in eclipse source
+# Interaction
+* Detail interaction please refer to the source code in zip file and BridgeServlet.java in eclipse source
+
+# Runtime
+* eclipse runtime is Eclipse 3.8 RCP because there is a conflict of URLStreamHandler between Equinox and Spring
