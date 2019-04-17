@@ -3,6 +3,7 @@
 ## Note
 
 * the projects provided in zip file only for manual check and they can not be imported into eclipse for direct usage
+* the source provided in zip file is a little different from the description of this article https://www.ibm.com/developerworks/cn/java/j-springboot-application-integrated-osgi-framework-development/index.html. Because we have refactored the source code to make the project much more clear than before.
 
 ## Description
 
