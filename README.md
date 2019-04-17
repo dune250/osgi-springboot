@@ -1,4 +1,9 @@
 # osgi-springboot
+
+## Note
+
+* the projects provided in zip file only for manual check and they can not be imported into eclipse for direct usage
+
 ## Description
 
 osgi-* is java project
